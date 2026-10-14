@@ -4,100 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAP FICO & MM Training Admission | VS Innovative Tech</title>
-    <script src="https://tailwindcss.com"></script>
     <style>
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f8fafc; color: #0f172a; margin: 0; padding: 0; }
+        header { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px; position: sticky; top: 0; z-index: 50; }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo h1 { margin: 0; font-size: 24px; color: #2563eb; font-weight: 800; tracking-spacing: -0.5px; }
+        .logo p { margin: 0; font-size: 11px; color: #64748b; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+        .contact-btn { background-color: #f59e0b; color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; border-radius: 8px; font-size: 14px; display: inline-block; }
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 60px 20px; }
+        .hero-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+        @media(min-width: 992px) { .hero-container { flex-direction: row; align-items: center; } .hero-text { flex: 7; } .form-card { flex: 5; } }
+        .hero-text h2 { font-size: 38px; font-weight: 800; margin-top: 0; line-height: 1.2; margin-bottom: 15px; }
+        .highlight { color: #f59e0b; }
+        .hero-text p { color: #cbd5e1; font-size: 16px; line-height: 1.6; margin: 0; }
+        .form-card { background: white; color: #0f172a; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; }
+        .form-card h3 { margin-top: 0; margin-bottom: 5px; font-size: 22px; font-weight: 700; }
+        .form-card p { color: #64748b; font-size: 13px; margin-bottom: 20px; margin-top: 0; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-size: 11px; font-weight: bold; color: #475569; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; background-color: #ffffff; color: #0f172a; }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
+        .submit-btn { width: 100%; background-color: #2563eb; color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; transition: background 0.2s; margin-top: 10px; letter-spacing: 0.5px; }
+        .submit-btn:hover { background-color: #1d4ed8; }
+        .syllabus { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .syllabus h2 { text-align: center; font-size: 30px; font-weight: 800; margin-top: 0; margin-bottom: 40px; color: #0f172a; }
+        .syllabus-grid { display: flex; flex-direction: column; gap: 30px; }
+        @media(min-width: 992px) { .syllabus-grid { flex-direction: row; } .course-box { flex: 1; } }
+        .course-box { background: white; padding: 30px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(15,23,42,0.02); box-sizing: border-box; }
+        .course-box h3 { margin-top: 0; font-size: 22px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 20px; }
+        .chapter { border-left: 4px solid #2563eb; padding-left: 15px; margin-bottom: 20px; }
+        .course-box:last-child .chapter { border-left-color: #f59e0b; }
+        .chapter h4 { margin: 0 0 6px 0; font-size: 16px; color: #1e293b; font-weight: 700; }
+        .chapter p { margin: 0; font-size: 14px; color: #64748b; line-height: 1.5; }
+        footer { background-color: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 14px; margin-top: 60px; border-top: 1px solid #1e293b; }
+        footer p { margin: 0; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body>
 
     <!-- HEADER / NAVIGATION -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="text-center sm:text-left">
-                <h1 class="text-2xl font-black text-blue-600 tracking-tight">VS INNOVATIVE TECH</h1>
-                <p class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Vision to Success</p>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>VS INNOVATIVE TECH</h1>
+                <p>Vision to Success</p>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="tel:9742511156" class="text-gray-700 font-bold hover:text-blue-600">📞 9742511156</a>
-                <a href="#admission-form" class="bg-amber-500 hover:bg-amber-600 text-white font-bold px-5 py-2 rounded-lg transition text-sm">Apply Now</a>
+            <div>
+                <a href="tel:9742511156" class="contact-btn">📞 9742511156</a>
             </div>
         </div>
     </header>
 
     <!-- HERO & ADMISSION FORM SECTION -->
-    <section class="hero-gradient text-white py-12 lg:py-20 px-4">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <span class="bg-blue-600/30 text-blue-300 font-bold px-3 py-1 rounded-full text-sm uppercase tracking-wider">ISO 9001 : 2015 Certified Institute</span>
-                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">Master <span class="text-amber-400">SAP FICO & MM</span> Modules</h2>
-                <p class="text-gray-300 text-lg">Comprehensive, hands-on SAP corporate training in Vijayawada led by real-time experts with 8+ years of industry exposure.</p>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h2>Master <span class="highlight">SAP FICO & MM</span> Modules</h2>
+                <p>Comprehensive, hands-on SAP corporate training in Vijayawada led by real-time experts with 8+ years of industry exposure. Get certified and grow your career.</p>
             </div>
 
             <!-- Registration Lead Form -->
-            <div id="admission-form" class="lg:col-span-5 bg-white text-gray-900 p-6 sm:p-8 rounded-2xl shadow-xl">
-                <h3 class="text-2xl font-bold tracking-tight mb-2">Admission Inquiry 2026</h3>
-                <p class="text-gray-500 text-sm mb-6">Fill in details to receive a free demo session call.</p>
-                <form action="https://web3forms.com" method="POST" class="space-y-4">
-                <input type="hidden" name="access_key" value="ee0b6a5e-7d49-4ff8-91e0-db7101ae8bce">
+            <div class="form-card" id="admission-form">
+                <h3>Admission Inquiry 2026</h3>
+                <p>Fill in details to receive a free demo session call.</p>
+                <form action="https://web3forms.com" method="POST">
+                    <input type="hidden" name="access_key" value="ee0b6a5e-7d49-4ff8-91e0-db7101ae8bce">
                     <input type="hidden" name="subject" value="New SAP Course Inquiry - VS Innovative Tech">
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Full Name</label>
-                        <input type="text" name="Student Name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Enter full name">
+                    
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="Student Name" required placeholder="Enter full name">
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Phone Number</label>
-                        <input type="tel" name="WhatsApp Number" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Enter contact number">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="WhatsApp Number" required placeholder="Enter contact number">
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Select SAP Module</label>
-                        <select name="Selected Course Module" class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <div class="form-group">
+                        <label>Select SAP Module</label>
+                        <select name="Selected Course Module">
                             <option>SAP FICO (Financial & Controlling)</option>
                             <option>SAP MM (Materials Management)</option>
                             <option>Combo Program (SAP FICO + SAP MM)</option>
                         </select>
                     </div>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg text-sm uppercase shadow-md transition duration-200">Submit Enrollment Application</button>
+                    <button type="submit" class="submit-btn">Submit Application</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- SYLLABUS DETAIL SECTION -->
-    <section class="py-16 px-4 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">Chapter-Wise Course Content</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <section class="syllabus">
+        <h2>Chapter-Wise Course Content</h2>
+        <div class="syllabus-grid">
             
             <!-- SAP FICO -->
-            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b">💼 SAP FICO</h3>
-                <div class="space-y-4 text-sm text-gray-600">
-                    <p><strong>Chapter 1:</strong> ERP Landscape & Architecture Navigations</p>
-                    <p><strong>Chapter 2:</strong> General Ledger (FI-GL) setup & enterprise configs</p>
-                    <p><strong>Chapter 3:</strong> Subledger Modules (FI-AP Accounts Payable & FI-AR Accounts Receivable)</p>
-                    <p><strong>Chapter 4:</strong> Asset Accounting Asset Lifecycles (FI-AA)</p>
-                    <p><strong>Chapter 5:</strong> Controlling Core Distribution Cost Centers (CO)</p>
+            <div class="course-box">
+                <h3>💼 SAP FICO Curriculum</h3>
+                <div class="chapter">
+                    <h4>Chapter 1: ERP Landscape & Architecture</h4>
+                    <p>Introduction to ERP concepts, SAP R/3 and S/4HANA navigation, custom transaction shortcuts, and basic user profiles.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 2: General Ledger (FI-GL) Setup</h4>
+                    <p>Enterprise Structure setup, Company Code definitions, Chart of Accounts, and posting period control variant settings.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 2: Subledger Modules (FI-AP & FI-AR)</h4>
+                    <p>Vendor and Customer master business records configuration, invoice workflows, and Automatic Payment Programs (APP).</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 4: Asset Accounting Lifecycles (FI-AA)</h4>
+                    <p>Structuring asset hierarchies, Chart of Depreciation configurations, managing asset acquisitions, and depreciation runs.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 5: Controlling Core (CO)</h4>
+                    <p>Configuring structural Cost Centers, building system Profit Centers, and handling internal settlement frameworks.</p>
                 </div>
             </div>
 
             <!-- SAP MM -->
-            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b">📦 SAP MM</h3>
-                <div class="space-y-4 text-sm text-gray-600">
-                    <p><strong>Chapter 1:</strong> Materials Management Enterprise Structuring</p>
-                    <p><strong>Chapter 2:</strong> Logistics Master Records & Sourcing Catalogs</p>
-                    <p><strong>Chapter 3:</strong> Full Sourcing Cycles (Procure-to-Pay / P2P Process)</p>
-                    <p><strong>Chapter 4:</strong> Warehouse Stocks Allocation Management (IM)</p>
-                    <p><strong>Chapter 5:</strong> 3-Way Logistics Invoices Verification Control (LIV)</p>
+            <div class="course-box">
+                <h3>📦 SAP MM Curriculum</h3>
+                <div class="chapter">
+                    <h4>Chapter 1: MM Enterprise Structuring</h4>
+                    <p>Detailed definition and linking assignments of organizational levels, plant nodes, and storage locations.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 2: Logistics Master Records</h4>
+                    <p>Creating material master records, structuring vendor files, building Purchasing Info Records (PIR), and source listings.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 3: Sourcing Cycles (Procure-to-Pay / P2P)</h4>
+                    <p>Executing complete automated sourcing: generating Purchase Requisitions (PR), official RFQs, and releasing Purchase Orders (PO).</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 4: Inventory Management (IM)</h4>
+                    <p>System processing for active incoming stocks: recording Goods Receipt (GR), Goods Issues (GI), and movement type transfers.</p>
+                </div>
+                <div class="chapter">
+                    <h4>Chapter 5: Invoice Verification Control (LIV)</h4>
+                    <p>Processing vendor accounting document inputs, orchestrating strict 3-way matching rules, and managing invoice blocking.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center border-t border-gray-800">
-        <p class="text-sm">&copy; 2026 VS Innovative Tech. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <footer>
