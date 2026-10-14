@@ -3,152 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAP FICO & MM Training Admission | VS Innovative Tech</title>
+    <title>SAP Corporate Training | VS Innovative Tech</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f8fafc; color: #0f172a; margin: 0; padding: 0; }
-        header { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px; position: sticky; top: 0; z-index: 50; }
-        .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo h1 { margin: 0; font-size: 24px; color: #2563eb; font-weight: 800; tracking-spacing: -0.5px; }
-        .logo p { margin: 0; font-size: 11px; color: #64748b; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
-        .contact-btn { background-color: #f59e0b; color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; border-radius: 8px; font-size: 14px; display: inline-block; }
-        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 60px 20px; }
-        .hero-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
-        @media(min-width: 992px) { .hero-container { flex-direction: row; align-items: center; } .hero-text { flex: 7; } .form-card { flex: 5; } }
-        .hero-text h2 { font-size: 38px; font-weight: 800; margin-top: 0; line-height: 1.2; margin-bottom: 15px; }
-        .highlight { color: #f59e0b; }
-        .hero-text p { color: #cbd5e1; font-size: 16px; line-height: 1.6; margin: 0; }
-        .form-card { background: white; color: #0f172a; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); box-sizing: border-box; }
-        .form-card h3 { margin-top: 0; margin-bottom: 5px; font-size: 22px; font-weight: 700; }
-        .form-card p { color: #64748b; font-size: 13px; margin-bottom: 20px; margin-top: 0; }
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; font-size: 11px; font-weight: bold; color: #475569; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px; }
-        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; background-color: #ffffff; color: #0f172a; }
-        .form-group input:focus, .form-group select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
-        .submit-btn { width: 100%; background-color: #2563eb; color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; font-size: 14px; text-transform: uppercase; cursor: pointer; transition: background 0.2s; margin-top: 10px; letter-spacing: 0.5px; }
-        .submit-btn:hover { background-color: #1d4ed8; }
-        .syllabus { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
-        .syllabus h2 { text-align: center; font-size: 30px; font-weight: 800; margin-top: 0; margin-bottom: 40px; color: #0f172a; }
-        .syllabus-grid { display: flex; flex-direction: column; gap: 30px; }
-        @media(min-width: 992px) { .syllabus-grid { flex-direction: row; } .course-box { flex: 1; } }
-        .course-box { background: white; padding: 30px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(15,23,42,0.02); box-sizing: border-box; }
-        .course-box h3 { margin-top: 0; font-size: 22px; font-weight: 700; color: #0f172a; border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 20px; }
-        .chapter { border-left: 4px solid #2563eb; padding-left: 15px; margin-bottom: 20px; }
-        .course-box:last-child .chapter { border-left-color: #f59e0b; }
-        .chapter h4 { margin: 0 0 6px 0; font-size: 16px; color: #1e293b; font-weight: 700; }
-        .chapter p { margin: 0; font-size: 14px; color: #64748b; line-height: 1.5; }
-        footer { background-color: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 14px; margin-top: 60px; border-top: 1px solid #1e293b; }
-        footer p { margin: 0; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0c111d; color: #ffffff; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+        
+        /* PREMIUM NAVIGATION BAR */
+        header { background-color: #ffffff; padding: 18px 40px; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 30px rgba(0,0,0,0.4); }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo-box h1 { margin: 0; font-size: 26px; color: #0f172a; font-weight: 900; tracking-spacing: -0.5px; }
+        .logo-box p { margin: 0; font-size: 11px; color: #2563eb; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links { display: flex; gap: 28px; align-items: center; }
+        .nav-links a { color: #334155; text-decoration: none; font-size: 15px; font-weight: 700; }
+        .nav-links a:hover { color: #2563eb; }
+        .talk-btn { background-color: #ea580c; color: white !important; padding: 10px 22px; border-radius: 8px; font-weight: bold; border: none; font-size: 15px; text-decoration: none; transition: 0.2s; }
+        .talk-btn:hover { background-color: #c2410c; }
+
+        /* HERO LAYER */
+        .hero-section { padding: 90px 40px; background-color: #0c111d; }
+        .hero-container { max-width: 1300px; margin: 0 auto; display: flex; flex-direction: column; gap: 60px; }
+        @media(min-width: 1024px) { .hero-container { flex-direction: row; align-items: center; } .left-content { flex: 6.5; } .right-card-pane { flex: 5.5; } }
+        
+        .portal-tag { color: #f59e0b; font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 25px; display: block; }
+        .main-headline { font-size: 56px; font-weight: 900; line-height: 1.15; margin: 0 0 25px 0; color: #ffffff; tracking-spacing: -1px; }
+        .accent-yellow { color: #facc15; }
+        .sub-desc { color: #94a3b8; font-size: 19px; line-height: 1.6; max-width: 650px; margin-bottom: 40px; }
+        
+        /* MODERN SEARCH BAR OVERLAY */
+        .search-container { background: #ffffff; padding: 8px; border-radius: 40px; display: flex; max-width: 600px; margin-bottom: 40px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); }
+        .search-container input { border: none; padding: 14px 24px; font-size: 16px; width: 100%; border-radius: 40px; outline: none; color: #000000; font-weight: 500; }
+        .search-container button { background: #ea580c; border: none; color: white; font-weight: bold; padding: 14px 36px; border-radius: 40px; cursor: pointer; font-size: 16px; transition: 0.2s; }
+        .search-container button:hover { background: #c2410c; }
+
+        /* BUTTON STRIP */
+        .action-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 60px; }
+        .btn-orange { background-color: #ea580c; color: white; padding: 15px 30px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 16px; box-shadow: 0 4px 15px rgba(234,88,12,0.4); transition: 0.2s; }
+        .btn-orange:hover { background-color: #c2410c; }
+        .btn-outline { border: 2px solid #334155; color: #cbd5e1; padding: 13px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 16px; background: rgba(255,255,255,0.02); transition: 0.2s; }
+        .btn-outline:hover { background: rgba(255,255,255,0.08); border-color: #64748b; }
+
+        /* RIGHT PANEL: SPLIT DESIGN WITH LEAD FORM CARD */
+        .right-card-pane { background: #ffffff; color: #0f172a; border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.7); }
+        .card-banner { background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://unsplash.com'); background-size: cover; background-position: center; height: 200px; }
+        .form-padding { padding: 40px; }
+        .form-padding h3 { margin: 0 0 8px 0; font-size: 26px; font-weight: 800; color: #0f172a; tracking-spacing: -0.5px; }
+        .form-padding p { margin: 0 0 25px 0; font-size: 15px; color: #64748b; font-weight: 500; }
+        
+        .input-box { margin-bottom: 20px; }
+        .input-box label { display: block; font-size: 12px; font-weight: 800; color: #475569; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; }
+        .input-box input, .input-box select { width: 100%; padding: 14px; border: 2px solid #e2e8f0; border-radius: 8px; box-sizing: border-box; font-size: 15px; color: #0f172a; background: #ffffff; font-weight: 500; outline: none; }
+        .input-box input:focus, .input-box select:focus { border-color: #2563eb; }
+        .action-submit { width: 100%; background: #2563eb; color: white; border: none; padding: 16px; border-radius: 8px; font-weight: bold; text-transform: uppercase; font-size: 15px; cursor: pointer; margin-top: 10px; box-shadow: 0 4px 15px rgba(37,99,235,0.3); transition: 0.2s; tracking-spacing: 0.5px; }
+        .action-submit:hover { background: #1d4ed8; }
+
+        /* METRIC FOOTER STRIP */
+        .stats-strip { display: flex; gap: 50px; border-top: 2px solid #1e293b; padding-top: 40px; flex-wrap: wrap; }
+        .stat-item h4 { margin: 0; font-size: 40px; font-weight: 900; color: #ffffff; }
+        .stat-item p { margin: 6px 0 0 0; font-size: 15px; color: #facc15; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* INTERACTIVE CHAPTER TABS CONFIGURATION */
+        .syllabus-section { padding: 100px 40px; background-color: #0f172a; border-top: 1px solid #1e293b; }
+        .syllabus-wrap { max-width: 1100px; margin: 0 auto; }
+        .syllabus-wrap h2 { font-size: 38px; text-align: center; margin-bottom: 15px; font-weight: 900; color: #ffffff; tracking-spacing: -0.5px; }
+        .section-desc { text-align: center; color: #94a3b8; font-size: 17px; margin-bottom: 50px; margin-top: 0; }
+        
+        /* THE TAB BUTTONS BAR */
+        .tabs-header { display: flex; justify-content: center; gap: 20px; margin-bottom: 45px; border-bottom: 2px solid #1e293b; padding-bottom: 20px; }
+        .tab-btn { background: #1e293b; border: 2px solid #334155; color: #94a3b8; padding: 16px 36px; border-radius: 40px; font-size: 18px; font-weight: 800; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 10px; }
+        .tab-btn:hover { background: rgba(255,255,255,0.05); color: #ffffff; }
+        .tab-btn.active { background: #2563eb; color: #ffffff; border-color: #2563eb; box-shadow: 0 4px 20px rgba(37,99,235,0.4); }
+
+        /* TAB SHEETS WINDOW */
+        .tab-content { display: none; background: #111827; padding: 45px; border-radius: 20px; border: 1px solid #1e293b; box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+        .tab-content.active { display: block; }
+        .tab-content h3 { font-size: 28px; margin-top: 0; color: #facc15; font-weight: 800; margin-bottom: 30px; border-bottom: 1px solid #1e293b; padding-bottom: 15px; }
+        
+        .row-item { border-left: 4px solid #2563eb; padding-left: 20px; margin-bottom: 35px; }
+        #mm-content .row-item { border-left-color: #ea580c; }
+        .row-item h5 { margin: 0 0 8px 0; font-size: 20px; color: #ffffff; font-weight: 800; }
+        .row-item p { margin: 0; font-size: 16px; color: #94a3b8; line-height: 1.6; }
+        .row-item:last-child { margin-bottom: 0; }
+
+        footer { background-color: #0c111d; color: #64748b; text-align: center; padding: 40px 20px; font-size: 15px; border-top: 1px solid #1e293b; font-weight: 500; }
     </style>
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION -->
+    <!-- NAVBAR LAYER -->
     <header>
-        <div class="header-container">
-            <div class="logo">
+        <div class="nav-container">
+            <div class="logo-box">
                 <h1>VS INNOVATIVE TECH</h1>
                 <p>Vision to Success</p>
             </div>
-            <div>
-                <a href="tel:9742511156" class="contact-btn">📞 9742511156</a>
+            <div class="nav-links">
+                <a href="#curriculum">Course Content</a>
+                <a href="#admission-form">Admission Roadmap</a>
+                <a href="tel:9742511156" class="talk-btn">Talk to Counsellor</a>
             </div>
         </div>
     </header>
 
-    <!-- HERO & ADMISSION FORM SECTION -->
-    <section class="hero">
+    <!-- MAIN DISPLAY HERO HERO SECTION -->
+    <section class="hero-section">
         <div class="hero-container">
-            <div class="hero-text">
-                <h2>Master <span class="highlight">SAP FICO & MM</span> Modules</h2>
-                <p>Comprehensive, hands-on SAP corporate training in Vijayawada led by real-time experts with 8+ years of industry exposure. Get certified and grow your career.</p>
-            </div>
-
-            <!-- Registration Lead Form -->
-            <div class="form-card" id="admission-form">
-                <h3>Admission Inquiry 2026</h3>
-                <p>Fill in details to receive a free demo session call.</p>
-                <form action="https://web3forms.com" method="POST">
-                    <input type="hidden" name="access_key" value="ee0b6a5e-7d49-4ff8-91e0-db7101ae8bce">
-                    <input type="hidden" name="subject" value="New SAP Course Inquiry - VS Innovative Tech">
-                    
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="Student Name" required placeholder="Enter full name">
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" name="WhatsApp Number" required placeholder="Enter contact number">
-                    </div>
-                    <div class="form-group">
-                        <label>Select SAP Module</label>
-                        <select name="Selected Course Module">
-                            <option>SAP FICO (Financial & Controlling)</option>
-                            <option>SAP MM (Materials Management)</option>
-                            <option>Combo Program (SAP FICO + SAP MM)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- SYLLABUS DETAIL SECTION -->
-    <section class="syllabus">
-        <h2>Chapter-Wise Course Content</h2>
-        <div class="syllabus-grid">
             
-            <!-- SAP FICO -->
-            <div class="course-box">
-                <h3>💼 SAP FICO Curriculum</h3>
-                <div class="chapter">
-                    <h4>Chapter 1: ERP Landscape & Architecture</h4>
-                    <p>Introduction to ERP concepts, SAP R/3 and S/4HANA navigation, custom transaction shortcuts, and basic user profiles.</p>
+            <div class="left-content">
+                <span class="portal-tag">✦ ISO 9001 : 2015 Certified SAP Training</span>
+                <h2 class="main-headline">Shape your future with <br>the right <span class="accent-yellow">Course, College & Exam</span></h2>
+                <p class="sub-desc">Comprehensive structural guidance for student career scaling. Explore verified industrial training modules, interactive cloud configurations access routes, and dedicated placement engineering options.</p>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Search SAP FICO, MM Chapters, Configuration Guides...">
+                    <button>Search ➔</button>
                 </div>
-                <div class="chapter">
-                    <h4>Chapter 2: General Ledger (FI-GL) Setup</h4>
-                    <p>Enterprise Structure setup, Company Code definitions, Chart of Accounts, and posting period control variant settings.</p>
+
+                <div class="action-row">
+                    <a href="#admission-form" class="btn-orange">Admission Roadmap</a>
+                    <a href="#curriculum" class="btn-outline">Explore Courses</a>
                 </div>
-                <div class="chapter">
-                    <h4>Chapter 2: Subledger Modules (FI-AP & FI-AR)</h4>
-                    <p>Vendor and Customer master business records configuration, invoice workflows, and Automatic Payment Programs (APP).</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 4: Asset Accounting Lifecycles (FI-AA)</h4>
-                    <p>Structuring asset hierarchies, Chart of Depreciation configurations, managing asset acquisitions, and depreciation runs.</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 5: Controlling Core (CO)</h4>
-                    <p>Configuring structural Cost Centers, building system Profit Centers, and handling internal settlement frameworks.</p>
+
+                <div class="stats-strip">
+                    <div class="stat-item"><h4>380+</h4><p>Students Trained</p></div>
+                    <div class="stat-item"><h4>90+</h4><p>Days Server Access</p></div>
+                    <div class="stat-item"><h4>100%</h4><p>Job Oriented Tracks</p></div>
                 </div>
             </div>
 
-            <!-- SAP MM -->
-            <div class="course-box">
-                <h3>📦 SAP MM Curriculum</h3>
-                <div class="chapter">
-                    <h4>Chapter 1: MM Enterprise Structuring</h4>
-                    <p>Detailed definition and linking assignments of organizational levels, plant nodes, and storage locations.</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 2: Logistics Master Records</h4>
-                    <p>Creating material master records, structuring vendor files, building Purchasing Info Records (PIR), and source listings.</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 3: Sourcing Cycles (Procure-to-Pay / P2P)</h4>
-                    <p>Executing complete automated sourcing: generating Purchase Requisitions (PR), official RFQs, and releasing Purchase Orders (PO).</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 4: Inventory Management (IM)</h4>
-                    <p>System processing for active incoming stocks: recording Goods Receipt (GR), Goods Issues (GI), and movement type transfers.</p>
-                </div>
-                <div class="chapter">
-                    <h4>Chapter 5: Invoice Verification Control (LIV)</h4>
-                    <p>Processing vendor accounting document inputs, orchestrating strict 3-way matching rules, and managing invoice blocking.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
+            <!-- RIGHT FORM SIDEBAR CARD -->
+            <div class="right-card-pane" id="admission-form">
+                <div class="card-banner"></div>
